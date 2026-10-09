@@ -1,0 +1,6 @@
+requests
+python-dotenv
+icalendar
+python-dateutil
+escpos
+pillow

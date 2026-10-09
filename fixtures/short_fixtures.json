@@ -1,0 +1,36 @@
+{
+    "label": "NEXT 7 DAYS",
+    "generated_at": "2026-10-08T23:32:07.112927",
+    "fixtures": [
+        {
+            "fixture_id": "b5400bae812da7a8554e4c2490b75922@skysports.com",
+            "start": "2026-10-10T14:00:00+00:00",
+            "timestamp": 1791640800,
+            "home": "Rangers",
+            "away": "Kilmarnock",
+            "venue": "Ibrox Stadium",
+            "competition": "Scottish Premiership",
+            "description": "Rangers v Kilmarnock - Ibrox Stadium - Scottish Premiership",
+            "tags": [
+                "ibrox",
+                "league",
+                "rangers",
+                "rangers_home"
+            ]
+        },
+        {
+            "fixture_id": "8435a559d8be52ae9811570f385baac0@skysports.com",
+            "start": "2026-10-11T11:00:00+00:00",
+            "timestamp": 1791716400,
+            "home": "Motherwell",
+            "away": "Celtic",
+            "venue": "Fir Park",
+            "competition": "Scottish Premiership",
+            "description": "Motherwell v Celtic - Fir Park - Scottish Premiership - Live on Sky Sports Football",
+            "tags": [
+                "celtic",
+                "league"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,2332 @@
+[
+    {
+        "fixture_id": "0e98b4fdd10ab2437b14b9969f6f496f@skysports.com",
+        "start": "2025-12-11T17:45:00+00:00",
+        "timestamp": 1765475100,
+        "home": "Ferencvaros",
+        "away": "Rangers",
+        "venue": "Groupama Arena",
+        "competition": "UEFA Europa League",
+        "description": "Ferencvaros v Rangers - Groupama Arena - UEFA Europa League",
+        "tags": [
+            "european",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "00ae71d1639e3dafc4669d028983caa3@skysports.com",
+        "start": "2025-12-11T20:00:00+00:00",
+        "timestamp": 1765483200,
+        "home": "Celtic",
+        "away": "Roma",
+        "venue": "Celtic Park",
+        "competition": "UEFA Europa League",
+        "description": "Celtic v Roma - Celtic Park - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "6ea94d3b238eed38d3f0b1dd53663e5d@skysports.com",
+        "start": "2025-12-14T15:30:00+00:00",
+        "timestamp": 1765726200,
+        "home": "St Mirren",
+        "away": "Celtic",
+        "venue": "Hampden Park",
+        "competition": "Premier Sports Cup",
+        "description": "St Mirren v Celtic - Hampden Park - Premier Sports Cup",
+        "tags": [
+            "celtic",
+            "cup",
+            "hampden"
+        ]
+    },
+    {
+        "fixture_id": "ef831df7d1d41c4c7b34565b87da177c@skysports.com",
+        "start": "2025-12-15T19:45:00+00:00",
+        "timestamp": 1765827900,
+        "home": "Rangers",
+        "away": "Hibernian",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Hibernian - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "9fcd4330aa1ae199956382de0ffd4056@skysports.com",
+        "start": "2025-12-17T20:00:00+00:00",
+        "timestamp": 1766001600,
+        "home": "Dundee United",
+        "away": "Celtic",
+        "venue": "CalForth Construction Arena at Tannadice Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee United v Celtic - CalForth Construction Arena at Tannadice Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "1d9fd665eefdd491050ec6b68f5bbfda@skysports.com",
+        "start": "2025-12-21T13:30:00+00:00",
+        "timestamp": 1766323800,
+        "home": "Hearts",
+        "away": "Rangers",
+        "venue": "Tynecastle",
+        "competition": "Scottish Premiership",
+        "description": "Hearts v Rangers - Tynecastle - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "9e655ac054c074bb87c1bf2e4f0bb14c@skysports.com",
+        "start": "2025-12-21T15:00:00+00:00",
+        "timestamp": 1766329200,
+        "home": "Celtic",
+        "away": "Aberdeen",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Aberdeen - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "442add2a3c6310476bdb0ae654b7635c@skysports.com",
+        "start": "2025-12-27T15:00:00+00:00",
+        "timestamp": 1766847600,
+        "home": "Rangers",
+        "away": "Motherwell",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Motherwell - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "cdce765a73223368819b056a46cd11a2@skysports.com",
+        "start": "2025-12-27T15:00:00+00:00",
+        "timestamp": 1766847600,
+        "home": "Livingston",
+        "away": "Celtic",
+        "venue": "Tony Macaroni Arena",
+        "competition": "Scottish Premiership",
+        "description": "Livingston v Celtic - Tony Macaroni Arena - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "7a6ed99d69ef51eca24f8ed1a68a76fb@skysports.com",
+        "start": "2025-12-30T19:45:00+00:00",
+        "timestamp": 1767123900,
+        "home": "Rangers",
+        "away": "St Mirren",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v St Mirren - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "2f5bd061a3b27598d505c07ba8343a16@skysports.com",
+        "start": "2025-12-30T20:00:00+00:00",
+        "timestamp": 1767124800,
+        "home": "Motherwell",
+        "away": "Celtic",
+        "venue": "Fir Park",
+        "competition": "Scottish Premiership",
+        "description": "Motherwell v Celtic - Fir Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "c6111fa808f2e205af3076669848f14d@skysports.com",
+        "start": "2026-01-03T12:30:00+00:00",
+        "timestamp": 1767443400,
+        "home": "Celtic",
+        "away": "Rangers",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Rangers - Celtic Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league",
+            "old_firm",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "cea72cc04759fa00e5493248a41677dc@skysports.com",
+        "start": "2026-01-06T20:00:00+00:00",
+        "timestamp": 1767729600,
+        "home": "Rangers",
+        "away": "Aberdeen",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Aberdeen - Ibrox Stadium - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "fc35e2c72372badb025fc275526057ef@skysports.com",
+        "start": "2026-01-10T15:00:00+00:00",
+        "timestamp": 1768057200,
+        "home": "Celtic",
+        "away": "Dundee United",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Dundee United - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "bd81b0e0bf04b936df44b1e5fa54f0ec@skysports.com",
+        "start": "2026-01-11T16:30:00+00:00",
+        "timestamp": 1768149000,
+        "home": "Aberdeen",
+        "away": "Rangers",
+        "venue": "Pittodrie",
+        "competition": "Scottish Premiership",
+        "description": "Aberdeen v Rangers - Pittodrie - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "be395c28c8ef4ee318df3681f95a4d8c@skysports.com",
+        "start": "2026-01-14T19:45:00+00:00",
+        "timestamp": 1768419900,
+        "home": "Falkirk",
+        "away": "Celtic",
+        "venue": "Falkirk Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Falkirk v Celtic - Falkirk Stadium - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "28a9c67370def5f50482bbc64446b94f@skysports.com",
+        "start": "2026-01-16T19:45:00+00:00",
+        "timestamp": 1768592700,
+        "home": "Rangers",
+        "away": "Annan Athletic",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Cup",
+        "description": "Rangers v Annan Athletic - Ibrox Stadium - Scottish Cup",
+        "tags": [
+            "cup",
+            "ibrox",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "cdb08f8585af9f14c4e6a188ad00fd62@skysports.com",
+        "start": "2026-01-18T17:30:00+00:00",
+        "timestamp": 1768757400,
+        "home": "Auchinleck Talbot",
+        "away": "Celtic",
+        "venue": "The BBSP Stadium, Rugby Park",
+        "competition": "Scottish Cup",
+        "description": "Auchinleck Talbot v Celtic - The BBSP Stadium, Rugby Park - Scottish Cup",
+        "tags": [
+            "celtic",
+            "cup"
+        ]
+    },
+    {
+        "fixture_id": "20a7e31f01029f26144ce380233e57c6@skysports.com",
+        "start": "2026-01-22T17:45:00+00:00",
+        "timestamp": 1769103900,
+        "home": "Bologna",
+        "away": "Celtic",
+        "venue": "Renato Dall'Ara",
+        "competition": "UEFA Europa League",
+        "description": "Bologna v Celtic - Renato Dall'Ara - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "564b20a75b345de5a3be78eeafa02e9f@skysports.com",
+        "start": "2026-01-22T20:00:00+00:00",
+        "timestamp": 1769112000,
+        "home": "Rangers",
+        "away": "Ludogorets",
+        "venue": "Ibrox Stadium",
+        "competition": "UEFA Europa League",
+        "description": "Rangers v Ludogorets - Ibrox Stadium - UEFA Europa League",
+        "tags": [
+            "european",
+            "ibrox",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "1df709f03fbc58398b20230caa78f5d7@skysports.com",
+        "start": "2026-01-25T15:00:00+00:00",
+        "timestamp": 1769353200,
+        "home": "Rangers",
+        "away": "Dundee",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Dundee - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "a173e931d29eeeb91360327827505381@skysports.com",
+        "start": "2026-01-25T15:00:00+00:00",
+        "timestamp": 1769353200,
+        "home": "Hearts",
+        "away": "Celtic",
+        "venue": "Tynecastle",
+        "competition": "Scottish Premiership",
+        "description": "Hearts v Celtic - Tynecastle - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "9f8fd15f52fc7c7ffcce9c73bf7c6ca4@skysports.com",
+        "start": "2026-01-29T20:00:00+00:00",
+        "timestamp": 1769716800,
+        "home": "FC Porto",
+        "away": "Rangers",
+        "venue": "Estadio do Dragao",
+        "competition": "UEFA Europa League",
+        "description": "FC Porto v Rangers - Estadio do Dragao - UEFA Europa League",
+        "tags": [
+            "european",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "ca5272e04b34ff0ad2e21f4bf520a50b@skysports.com",
+        "start": "2026-01-29T20:00:00+00:00",
+        "timestamp": 1769716800,
+        "home": "Celtic",
+        "away": "FC Utrecht",
+        "venue": "Celtic Park",
+        "competition": "UEFA Europa League",
+        "description": "Celtic v FC Utrecht - Celtic Park - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "25266a6db7ad1bd898b2fa4582a15ecc@skysports.com",
+        "start": "2026-02-01T14:00:00+00:00",
+        "timestamp": 1769954400,
+        "home": "Hibernian",
+        "away": "Rangers",
+        "venue": "Easter Road",
+        "competition": "Scottish Premiership",
+        "description": "Hibernian v Rangers - Easter Road - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "be5b808d3698c7ed19096d6a2cf6805e@skysports.com",
+        "start": "2026-02-01T15:00:00+00:00",
+        "timestamp": 1769958000,
+        "home": "Celtic",
+        "away": "Falkirk",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Falkirk - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "74d1d71a6585638c5271f21990a2c2a2@skysports.com",
+        "start": "2026-02-04T19:45:00+00:00",
+        "timestamp": 1770234300,
+        "home": "Rangers",
+        "away": "Kilmarnock",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Kilmarnock - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "f6aaef1a65740a15f53d21d8ed7782f5@skysports.com",
+        "start": "2026-02-07T17:30:00+00:00",
+        "timestamp": 1770485400,
+        "home": "Celtic",
+        "away": "Dundee",
+        "venue": "Celtic Park",
+        "competition": "Scottish Cup",
+        "description": "Celtic v Dundee - Celtic Park - Scottish Cup",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "cup"
+        ]
+    },
+    {
+        "fixture_id": "aa1388fa67d24e2135bb771ecc8540df@skysports.com",
+        "start": "2026-02-08T14:00:00+00:00",
+        "timestamp": 1770559200,
+        "home": "Rangers",
+        "away": "Queen's Park",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Cup",
+        "description": "Rangers v Queen's Park - Ibrox Stadium - Scottish Cup",
+        "tags": [
+            "cup",
+            "ibrox",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "8d8f747a0fa4ba0cf7c74e56c1c907e6@skysports.com",
+        "start": "2026-02-11T19:45:00+00:00",
+        "timestamp": 1770839100,
+        "home": "Celtic",
+        "away": "Livingston",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Livingston - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "17e88ba2ee2ecf77df10245ece558bd9@skysports.com",
+        "start": "2026-02-11T20:00:00+00:00",
+        "timestamp": 1770840000,
+        "home": "Motherwell",
+        "away": "Rangers",
+        "venue": "Fir Park",
+        "competition": "Scottish Premiership",
+        "description": "Motherwell v Rangers - Fir Park - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "a324dbb25edc483ce7f968a971054421@skysports.com",
+        "start": "2026-02-15T14:00:00+00:00",
+        "timestamp": 1771164000,
+        "home": "Kilmarnock",
+        "away": "Celtic",
+        "venue": "The BBSP Stadium, Rugby Park",
+        "competition": "Scottish Premiership",
+        "description": "Kilmarnock v Celtic - The BBSP Stadium, Rugby Park - Scottish Premiership - Live on Sky Sports Football and Sky Sports Main Event",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "2390afb106e444c7a5877cbbe90a9e75@skysports.com",
+        "start": "2026-02-15T16:30:00+00:00",
+        "timestamp": 1771173000,
+        "home": "Rangers",
+        "away": "Hearts",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Hearts - Ibrox Stadium - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "d9a38df4a8b58131c644499ea5dc41e0@skysports.com",
+        "start": "2026-02-19T20:00:00+00:00",
+        "timestamp": 1771531200,
+        "home": "Celtic",
+        "away": "Stuttgart",
+        "venue": "Celtic Park",
+        "competition": "UEFA Europa League",
+        "description": "Celtic v Stuttgart - Celtic Park - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "9c91b81bbe4ffdcfbdcafc7364a5e4a7@skysports.com",
+        "start": "2026-02-22T15:00:00+00:00",
+        "timestamp": 1771772400,
+        "home": "Livingston",
+        "away": "Rangers",
+        "venue": "Tony Macaroni Arena",
+        "competition": "Scottish Premiership",
+        "description": "Livingston v Rangers - Tony Macaroni Arena - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "431dd815f00e84242112fa0b1ca15762@skysports.com",
+        "start": "2026-02-22T15:00:00+00:00",
+        "timestamp": 1771772400,
+        "home": "Celtic",
+        "away": "Hibernian",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Hibernian - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "c864f94618bbd99be7769db191dcf4a0@skysports.com",
+        "start": "2026-02-26T17:45:00+00:00",
+        "timestamp": 1772127900,
+        "home": "Stuttgart",
+        "away": "Celtic",
+        "venue": "MHP Arena",
+        "competition": "UEFA Europa League",
+        "description": "Stuttgart v Celtic - MHP Arena - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "57c02f2bf2a87f7acc695ba6636ee03d@skysports.com",
+        "start": "2026-03-01T12:00:00+00:00",
+        "timestamp": 1772366400,
+        "home": "Rangers",
+        "away": "Celtic",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Celtic - Ibrox Stadium - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "ibrox",
+            "league",
+            "old_firm",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "8a063964591776f6cb01efa0a8f6a610@skysports.com",
+        "start": "2026-03-04T20:00:00+00:00",
+        "timestamp": 1772654400,
+        "home": "Aberdeen",
+        "away": "Celtic",
+        "venue": "Pittodrie",
+        "competition": "Scottish Premiership",
+        "description": "Aberdeen v Celtic - Pittodrie - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "2e662c6d8f9aeb21cf05e839542a1e66@skysports.com",
+        "start": "2026-03-08T13:00:00+00:00",
+        "timestamp": 1772974800,
+        "home": "Rangers",
+        "away": "Celtic",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Cup",
+        "description": "Rangers v Celtic - Ibrox Stadium - Scottish Cup",
+        "tags": [
+            "celtic",
+            "cup",
+            "ibrox",
+            "old_firm",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "c8e8eb628b1a0e1364b073c1f21d0ff1@skysports.com",
+        "start": "2026-03-14T15:00:00+00:00",
+        "timestamp": 1773500400,
+        "home": "Celtic",
+        "away": "Motherwell",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Motherwell - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "4782780ad7e48d7ca207e27f2a942a3c@skysports.com",
+        "start": "2026-03-15T12:00:00+00:00",
+        "timestamp": 1773576000,
+        "home": "St Mirren",
+        "away": "Rangers",
+        "venue": "The SMiSA Stadium",
+        "competition": "Scottish Premiership",
+        "description": "St Mirren v Rangers - The SMiSA Stadium - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "8afb24a2c9609d80148c46bb0928f5a7@skysports.com",
+        "start": "2026-03-21T17:45:00+00:00",
+        "timestamp": 1774115100,
+        "home": "Rangers",
+        "away": "Aberdeen",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Aberdeen - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "4af8b7641f5800e40d7c2878baed249c@skysports.com",
+        "start": "2026-03-22T12:30:00+00:00",
+        "timestamp": 1774182600,
+        "home": "Dundee United",
+        "away": "Celtic",
+        "venue": "CalForth Construction Arena at Tannadice Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee United v Celtic - CalForth Construction Arena at Tannadice Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "0c27d8486a45191b5c78ef357d373651@skysports.com",
+        "start": "2026-03-28T17:00:00+00:00",
+        "timestamp": 1774717200,
+        "home": "Scotland",
+        "away": "Japan",
+        "venue": "Hampden Park",
+        "competition": "International Match",
+        "description": "Scotland v Japan - Hampden Park - International Match",
+        "tags": [
+            "hampden",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "f070ca4f4a0518e3290442a020b9a732@skysports.com",
+        "start": "2026-03-31T18:30:00+00:00",
+        "timestamp": 1774981800,
+        "home": "Ivory Coast",
+        "away": "Scotland",
+        "venue": "Hill Dickinson Stadium",
+        "competition": "International Match",
+        "description": "Ivory Coast v Scotland - Hill Dickinson Stadium - International Match",
+        "tags": [
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "7aa572684c3470c3eca6b2880ba4e5ab@skysports.com",
+        "start": "2026-04-04T14:00:00+00:00",
+        "timestamp": 1775311200,
+        "home": "Rangers",
+        "away": "Dundee United",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Dundee United - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "afc4319bc2c532498f2e38f8b09c5c0d@skysports.com",
+        "start": "2026-04-05T15:30:00+00:00",
+        "timestamp": 1775403000,
+        "home": "Dundee",
+        "away": "Celtic",
+        "venue": "The Scot Foam Stadium at Dens Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee v Celtic - The Scot Foam Stadium at Dens Park - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "afd6d474db3c63b9d8efe131d4b0ec21@skysports.com",
+        "start": "2026-04-11T14:00:00+00:00",
+        "timestamp": 1775916000,
+        "home": "Celtic",
+        "away": "St Mirren",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v St Mirren - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "38e0c9109e772e57571d45704a65e08d@skysports.com",
+        "start": "2026-04-12T11:00:00+00:00",
+        "timestamp": 1775991600,
+        "home": "Falkirk",
+        "away": "Rangers",
+        "venue": "Falkirk Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Falkirk v Rangers - Falkirk Stadium - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "2459fc4d3b69ab5af5c93aca4d4ead16@skysports.com",
+        "start": "2026-04-19T13:00:00+00:00",
+        "timestamp": 1776603600,
+        "home": "Celtic",
+        "away": "St Mirren",
+        "venue": "Hampden Park",
+        "competition": "Scottish Cup",
+        "description": "Celtic v St Mirren - Hampden Park - Scottish Cup",
+        "tags": [
+            "celtic",
+            "cup",
+            "hampden"
+        ]
+    },
+    {
+        "fixture_id": "976d438a91e102280dc3de2ccc882a9e@skysports.com",
+        "start": "2026-04-25T16:30:00+00:00",
+        "timestamp": 1777134600,
+        "home": "Celtic",
+        "away": "Falkirk",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Falkirk - Celtic Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "dde64915e0757379cf9ba6fa613a3592@skysports.com",
+        "start": "2026-04-26T14:00:00+00:00",
+        "timestamp": 1777212000,
+        "home": "Rangers",
+        "away": "Motherwell",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Motherwell - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "7d1c7ca9de598ffc4780905fb44799a5@skysports.com",
+        "start": "2026-05-03T11:00:00+00:00",
+        "timestamp": 1777806000,
+        "home": "Hibernian",
+        "away": "Celtic",
+        "venue": "Easter Road",
+        "competition": "Scottish Premiership",
+        "description": "Hibernian v Celtic - Easter Road - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "b7665d6040afaaf2cea58cf013adf0a5@skysports.com",
+        "start": "2026-05-04T16:30:00+00:00",
+        "timestamp": 1777912200,
+        "home": "Hearts",
+        "away": "Rangers",
+        "venue": "Tynecastle",
+        "competition": "Scottish Premiership",
+        "description": "Hearts v Rangers - Tynecastle - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "c9da0d86585678c28bbd6b601cf17277@skysports.com",
+        "start": "2026-05-10T11:00:00+00:00",
+        "timestamp": 1778410800,
+        "home": "Celtic",
+        "away": "Rangers",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Rangers - Celtic Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league",
+            "old_firm",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "64695274f0aaa51dd8130861cd0936f1@skysports.com",
+        "start": "2026-05-13T19:00:00+00:00",
+        "timestamp": 1778698800,
+        "home": "Rangers",
+        "away": "Hibernian",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Hibernian - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "45b32bd310fae658000a42f3f0fa5243@skysports.com",
+        "start": "2026-05-13T19:00:00+00:00",
+        "timestamp": 1778698800,
+        "home": "Motherwell",
+        "away": "Celtic",
+        "venue": "Fir Park",
+        "competition": "Scottish Premiership",
+        "description": "Motherwell v Celtic - Fir Park - Scottish Premiership - Live on Sky Sports+",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "3bec739c2e5c369fe27379f777ecaaac@skysports.com",
+        "start": "2026-05-16T11:30:00+00:00",
+        "timestamp": 1778931000,
+        "home": "Falkirk",
+        "away": "Rangers",
+        "venue": "Falkirk Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Falkirk v Rangers - Falkirk Stadium - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "74772987684ef9cc0cf3c5bf9174b53b@skysports.com",
+        "start": "2026-05-16T11:30:00+00:00",
+        "timestamp": 1778931000,
+        "home": "Celtic",
+        "away": "Hearts",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Hearts - Celtic Park - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "e555000ed4d952c5e0bc0d56a88a9096@skysports.com",
+        "start": "2026-05-23T14:00:00+00:00",
+        "timestamp": 1779544800,
+        "home": "Celtic",
+        "away": "Dunfermline Athletic",
+        "venue": "Hampden Park",
+        "competition": "Scottish Cup",
+        "description": "Celtic v Dunfermline Athletic - Hampden Park - Scottish Cup",
+        "tags": [
+            "celtic",
+            "cup",
+            "hampden"
+        ]
+    },
+    {
+        "fixture_id": "02c927cc4a5bd3e29040186b36264168@skysports.com",
+        "start": "2026-05-30T12:00:00+00:00",
+        "timestamp": 1780142400,
+        "home": "Scotland",
+        "away": "Curacao",
+        "venue": "Hampden Park",
+        "competition": "International Match",
+        "description": "Scotland v Curacao - Hampden Park - International Match",
+        "tags": [
+            "hampden",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "c966819726c6b97da73d86c5e0bce3bd@skysports.com",
+        "start": "2026-06-06T20:00:00+00:00",
+        "timestamp": 1780776000,
+        "home": "Bolivia",
+        "away": "Scotland",
+        "venue": "Red Bull Arena (USA)",
+        "competition": "International Match",
+        "description": "Bolivia v Scotland - Red Bull Arena (USA) - International Match",
+        "tags": [
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "db22b90efca987223ae7eb0b42c1b71f@skysports.com",
+        "start": "2026-06-14T01:00:00+00:00",
+        "timestamp": 1781398800,
+        "home": "Haiti",
+        "away": "Scotland",
+        "venue": "Boston Stadium",
+        "competition": "FIFA World Cup",
+        "description": "Haiti v Scotland - Boston Stadium - FIFA World Cup",
+        "tags": [
+            "cup",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "8258657679944cf11cc6557a39db7478@skysports.com",
+        "start": "2026-06-19T22:00:00+00:00",
+        "timestamp": 1781906400,
+        "home": "Scotland",
+        "away": "Morocco",
+        "venue": "Boston Stadium",
+        "competition": "FIFA World Cup",
+        "description": "Scotland v Morocco - Boston Stadium - FIFA World Cup",
+        "tags": [
+            "cup",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "fd4d9a0bf44a16edf5eb2c8284e69aab@skysports.com",
+        "start": "2026-06-24T22:00:00+00:00",
+        "timestamp": 1782338400,
+        "home": "Scotland",
+        "away": "Brazil",
+        "venue": "Hard Rock Stadium",
+        "competition": "FIFA World Cup",
+        "description": "Scotland v Brazil - Hard Rock Stadium - FIFA World Cup",
+        "tags": [
+            "cup",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "135d598e61955d2a9955d53e9127eb67@skysports.com",
+        "start": "2026-07-25T14:00:00+00:00",
+        "timestamp": 1784988000,
+        "home": "Celtic",
+        "away": "AC Milan",
+        "venue": "Celtic Park",
+        "competition": "Friendly Match",
+        "description": "Celtic v AC Milan - Celtic Park - Friendly Match",
+        "tags": [
+            "celtic",
+            "celtic_park"
+        ]
+    },
+    {
+        "fixture_id": "b5db70bfcff46c6ad99dae422697194e@skysports.com",
+        "start": "2026-07-31T19:00:00+00:00",
+        "timestamp": 1785524400,
+        "home": "Dundee United",
+        "away": "Rangers",
+        "venue": "CalForth Construction Arena at Tannadice Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee United v Rangers - CalForth Construction Arena at Tannadice Park - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "162ba869a75348305a9006af28dfa610@skysports.com",
+        "start": "2026-08-03T18:30:00+00:00",
+        "timestamp": 1785781800,
+        "home": "Celtic",
+        "away": "Dundee",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Dundee - Celtic Park - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "f736e286407a01181c7376ddb8d1915f@skysports.com",
+        "start": "2026-08-06T16:00:00+00:00",
+        "timestamp": 1786032000,
+        "home": "Jagiellonia Bialystok",
+        "away": "Rangers",
+        "venue": "Chorten Arena",
+        "competition": "Europa League Qualifying",
+        "description": "Jagiellonia Bialystok v Rangers - Chorten Arena - Europa League Qualifying",
+        "tags": [
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "c27d4636f56bb5692b8ecd12cbda2dfe@skysports.com",
+        "start": "2026-08-09T12:30:00+00:00",
+        "timestamp": 1786278600,
+        "home": "Kilmarnock",
+        "away": "Celtic",
+        "venue": "The BBSP Stadium, Rugby Park",
+        "competition": "Scottish Premiership",
+        "description": "Kilmarnock v Celtic - The BBSP Stadium, Rugby Park - Scottish Premiership - Live on Sky Sports Main Event and Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "1d57370734d8032630214c399699baad@skysports.com",
+        "start": "2026-08-09T15:00:00+00:00",
+        "timestamp": 1786287600,
+        "home": "Rangers",
+        "away": "Hibernian",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Hibernian - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "6de1ce124b57a4924c5727cdf0d9c9bd@skysports.com",
+        "start": "2026-08-13T18:30:00+00:00",
+        "timestamp": 1786645800,
+        "home": "Rangers",
+        "away": "Jagiellonia Bialystok",
+        "venue": "Ibrox Stadium",
+        "competition": "Europa League Qualifying",
+        "description": "Rangers v Jagiellonia Bialystok - Ibrox Stadium - Europa League Qualifying",
+        "tags": [
+            "ibrox",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "6706cc2594d9a4707cdeca9b74132071@skysports.com",
+        "start": "2026-08-15T16:45:00+00:00",
+        "timestamp": 1786812300,
+        "home": "Dundee United",
+        "away": "Celtic",
+        "venue": "CalForth Construction Arena at Tannadice Park",
+        "competition": "Premier Sports Cup",
+        "description": "Dundee United v Celtic - CalForth Construction Arena at Tannadice Park - Premier Sports Cup",
+        "tags": [
+            "celtic",
+            "cup"
+        ]
+    },
+    {
+        "fixture_id": "e21f3c0577cd1718cc47da41887536b4@skysports.com",
+        "start": "2026-08-16T15:00:00+00:00",
+        "timestamp": 1786892400,
+        "home": "Rangers",
+        "away": "St Mirren",
+        "venue": "Ibrox Stadium",
+        "competition": "Premier Sports Cup",
+        "description": "Rangers v St Mirren - Ibrox Stadium - Premier Sports Cup",
+        "tags": [
+            "cup",
+            "ibrox",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "b9995d951ea246790609230e90e92be7@skysports.com",
+        "start": "2026-08-19T19:00:00+00:00",
+        "timestamp": 1787166000,
+        "home": "Celtic",
+        "away": "Linz ASK",
+        "venue": "Celtic Park",
+        "competition": "UEFA Champions League Qualifying",
+        "description": "Celtic v Linz ASK - Celtic Park - UEFA Champions League Qualifying",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "a80da746c2413a83e7ccecdc860554b2@skysports.com",
+        "start": "2026-08-20T18:45:00+00:00",
+        "timestamp": 1787251500,
+        "home": "Rangers",
+        "away": "FK Jablonec",
+        "venue": "Ibrox Stadium",
+        "competition": "UEFA Conference League Qualifying",
+        "description": "Rangers v FK Jablonec - Ibrox Stadium - UEFA Conference League Qualifying",
+        "tags": [
+            "european",
+            "ibrox",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "1640d33fce4d4b078a816831f28ae100@skysports.com",
+        "start": "2026-08-25T19:00:00+00:00",
+        "timestamp": 1787684400,
+        "home": "Linz ASK",
+        "away": "Celtic",
+        "venue": "Raiffeisen Arena",
+        "competition": "UEFA Champions League Qualifying",
+        "description": "Linz ASK v Celtic - Raiffeisen Arena - UEFA Champions League Qualifying",
+        "tags": [
+            "celtic",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "25c8faa61faf82df542497682d92c727@skysports.com",
+        "start": "2026-08-27T16:00:00+00:00",
+        "timestamp": 1787846400,
+        "home": "FK Jablonec",
+        "away": "Rangers",
+        "venue": "Stadion Strelnice",
+        "competition": "UEFA Conference League Qualifying",
+        "description": "FK Jablonec v Rangers - Stadion Strelnice - UEFA Conference League Qualifying",
+        "tags": [
+            "european",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "cb5516dcf630eaa3f3b62df2e40d6406@skysports.com",
+        "start": "2026-08-29T14:00:00+00:00",
+        "timestamp": 1788012000,
+        "home": "Celtic",
+        "away": "Falkirk",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Falkirk - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "bcfd0a8cf6683a2b4e354b1d1385526a@skysports.com",
+        "start": "2026-08-30T11:00:00+00:00",
+        "timestamp": 1788087600,
+        "home": "Aberdeen",
+        "away": "Rangers",
+        "venue": "Pittodrie",
+        "competition": "Scottish Premiership",
+        "description": "Aberdeen v Rangers - Pittodrie - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "0bd72aac00ae402d95a6a893adb3e783@skysports.com",
+        "start": "2026-09-02T18:45:00+00:00",
+        "timestamp": 1788374700,
+        "home": "Celtic",
+        "away": "Aberdeen",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Aberdeen - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "0b60423a29d07c20ead070259842a858@skysports.com",
+        "start": "2026-09-02T19:00:00+00:00",
+        "timestamp": 1788375600,
+        "home": "Falkirk",
+        "away": "Rangers",
+        "venue": "Falkirk Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Falkirk v Rangers - Falkirk Stadium - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "efde270aae1433d56b9d3ff56740a2c0@skysports.com",
+        "start": "2026-09-05T14:00:00+00:00",
+        "timestamp": 1788616800,
+        "home": "Rangers",
+        "away": "Motherwell",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Motherwell - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "4c8372a9bdf4d6f38c7ac3844db5b29d@skysports.com",
+        "start": "2026-09-05T19:00:00+00:00",
+        "timestamp": 1788634800,
+        "home": "St Mirren",
+        "away": "Celtic",
+        "venue": "The SMiSA Stadium",
+        "competition": "Scottish Premiership",
+        "description": "St Mirren v Celtic - The SMiSA Stadium - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "9c41a7b9f0202dc563d4864f72391f8c@skysports.com",
+        "start": "2026-09-09T18:45:00+00:00",
+        "timestamp": 1788979500,
+        "home": "Rangers",
+        "away": "St Mirren",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v St Mirren - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "b0d36319145190f2034194e5fb4c1343@skysports.com",
+        "start": "2026-09-09T19:00:00+00:00",
+        "timestamp": 1788980400,
+        "home": "St Johnstone",
+        "away": "Celtic",
+        "venue": "McDiarmid Park",
+        "competition": "Scottish Premiership",
+        "description": "St Johnstone v Celtic - McDiarmid Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "af16de0c88bfb84114c83664536a78a4@skysports.com",
+        "start": "2026-09-13T11:00:00+00:00",
+        "timestamp": 1789297200,
+        "home": "Rangers",
+        "away": "Celtic",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish League Cup",
+        "description": "Rangers v Celtic - Ibrox Stadium - Scottish League Cup",
+        "tags": [
+            "celtic",
+            "cup",
+            "ibrox",
+            "old_firm",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "7673aaa45461ebe0d2ee234cc0d728cc@skysports.com",
+        "start": "2026-09-17T19:00:00+00:00",
+        "timestamp": 1789671600,
+        "home": "Celtic",
+        "away": "Ferencvaros",
+        "venue": "Celtic Park",
+        "competition": "UEFA Europa League",
+        "description": "Celtic v Ferencvaros - Celtic Park - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "8e6df9289e4bc9da3b3b9c6ff1c955b4@skysports.com",
+        "start": "2026-09-20T11:00:00+00:00",
+        "timestamp": 1789902000,
+        "home": "Celtic",
+        "away": "Rangers",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Rangers - Celtic Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league",
+            "old_firm",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "bb8522e0d5242ce4b741fdd87774fcf6@skysports.com",
+        "start": "2026-09-26T13:00:00+00:00",
+        "timestamp": 1790427600,
+        "home": "Slovenia",
+        "away": "Scotland",
+        "venue": "SRC Stozice",
+        "competition": "UEFA Nations League",
+        "description": "Slovenia v Scotland - SRC Stozice - UEFA Nations League",
+        "tags": [
+            "european",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "64290cd2596a6a527df8519f46595417@skysports.com",
+        "start": "2026-09-29T18:45:00+00:00",
+        "timestamp": 1790707500,
+        "home": "Scotland",
+        "away": "Switzerland",
+        "venue": "Hampden Park",
+        "competition": "UEFA Nations League",
+        "description": "Scotland v Switzerland - Hampden Park - UEFA Nations League",
+        "tags": [
+            "european",
+            "hampden",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "3ff083c6733e159a2a8be64014ca8b4d@skysports.com",
+        "start": "2026-10-03T18:45:00+00:00",
+        "timestamp": 1791053100,
+        "home": "North Macedonia",
+        "away": "Scotland",
+        "venue": "Philip II Arena",
+        "competition": "UEFA Nations League",
+        "description": "North Macedonia v Scotland - Philip II Arena - UEFA Nations League",
+        "tags": [
+            "european",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "c340de752c83650fad82d254efef1c28@skysports.com",
+        "start": "2026-10-06T18:45:00+00:00",
+        "timestamp": 1791312300,
+        "home": "Scotland",
+        "away": "Slovenia",
+        "venue": "Hampden Park",
+        "competition": "UEFA Nations League",
+        "description": "Scotland v Slovenia - Hampden Park - UEFA Nations League",
+        "tags": [
+            "european",
+            "hampden",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "b5400bae812da7a8554e4c2490b75922@skysports.com",
+        "start": "2026-10-10T14:00:00+00:00",
+        "timestamp": 1791640800,
+        "home": "Rangers",
+        "away": "Kilmarnock",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Kilmarnock - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "8435a559d8be52ae9811570f385baac0@skysports.com",
+        "start": "2026-10-11T11:00:00+00:00",
+        "timestamp": 1791716400,
+        "home": "Motherwell",
+        "away": "Celtic",
+        "venue": "Fir Park",
+        "competition": "Scottish Premiership",
+        "description": "Motherwell v Celtic - Fir Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "1caabfd9c981f4f1c7cf63b122d373e4@skysports.com",
+        "start": "2026-10-15T19:00:00+00:00",
+        "timestamp": 1792090800,
+        "home": "Benfica",
+        "away": "Celtic",
+        "venue": "Estadio da Luz",
+        "competition": "UEFA Europa League",
+        "description": "Benfica v Celtic - Estadio da Luz - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "7310bf33a1e54d5d908301dfa032a434@skysports.com",
+        "start": "2026-10-17T19:00:00+00:00",
+        "timestamp": 1792263600,
+        "home": "Dundee",
+        "away": "Rangers",
+        "venue": "The Scot Foam Stadium at Dens Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee v Rangers - The Scot Foam Stadium at Dens Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "ec51f115b85624f76e8ff30bfeed6fd8@skysports.com",
+        "start": "2026-10-18T14:00:00+00:00",
+        "timestamp": 1792332000,
+        "home": "Celtic",
+        "away": "Hearts",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Hearts - Celtic Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "42e500851c00efe261c957fbea047b78@skysports.com",
+        "start": "2026-10-22T19:00:00+00:00",
+        "timestamp": 1792695600,
+        "home": "Celtic",
+        "away": "Celta Vigo",
+        "venue": "Celtic Park",
+        "competition": "UEFA Europa League",
+        "description": "Celtic v Celta Vigo - Celtic Park - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "91b2324dd36ec021d1eda6b6081cb349@skysports.com",
+        "start": "2026-10-24T14:00:00+00:00",
+        "timestamp": 1792850400,
+        "home": "Rangers",
+        "away": "St Johnstone",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v St Johnstone - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "0832a56dc79dcd2caf959d40d4c34a4f@skysports.com",
+        "start": "2026-10-25T12:00:00+00:00",
+        "timestamp": 1792929600,
+        "home": "Hibernian",
+        "away": "Celtic",
+        "venue": "Easter Road",
+        "competition": "Scottish Premiership",
+        "description": "Hibernian v Celtic - Easter Road - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "c924922389b02dd86475e3c0049ec50f@skysports.com",
+        "start": "2026-10-28T19:45:00+00:00",
+        "timestamp": 1793216700,
+        "home": "Celtic",
+        "away": "Dundee United",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Dundee United - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "5eb1afdf121376e3c85cd8856bd26132@skysports.com",
+        "start": "2026-10-28T20:00:00+00:00",
+        "timestamp": 1793217600,
+        "home": "Hearts",
+        "away": "Rangers",
+        "venue": "Tynecastle",
+        "competition": "Scottish Premiership",
+        "description": "Hearts v Rangers - Tynecastle - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "a11744058095c0d08392090b556e3e2b@skysports.com",
+        "start": "2026-10-31T17:30:00+00:00",
+        "timestamp": 1793467800,
+        "home": "Rangers",
+        "away": "Aberdeen",
+        "venue": "Hampden Park",
+        "competition": "Scottish League Cup",
+        "description": "Rangers v Aberdeen - Hampden Park - Scottish League Cup",
+        "tags": [
+            "cup",
+            "hampden",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "468f138eade31172661cc0b8114e77ff@skysports.com",
+        "start": "2026-11-01T13:00:00+00:00",
+        "timestamp": 1793538000,
+        "home": "Falkirk",
+        "away": "Celtic",
+        "venue": "Falkirk Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Falkirk v Celtic - Falkirk Stadium - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "59700af2af18540ca5df5ba480c95e59@skysports.com",
+        "start": "2026-11-05T20:00:00+00:00",
+        "timestamp": 1793908800,
+        "home": "Celtic",
+        "away": "Besiktas",
+        "venue": "Celtic Park",
+        "competition": "UEFA Europa League",
+        "description": "Celtic v Besiktas - Celtic Park - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "3d3b913b1b081d84b7e6a50395f00347@skysports.com",
+        "start": "2026-11-07T20:00:00+00:00",
+        "timestamp": 1794081600,
+        "home": "St Mirren",
+        "away": "Rangers",
+        "venue": "The SMiSA Stadium",
+        "competition": "Scottish Premiership",
+        "description": "St Mirren v Rangers - The SMiSA Stadium - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "790a268a0c5e359004ccd689a5f2bc44@skysports.com",
+        "start": "2026-11-08T16:00:00+00:00",
+        "timestamp": 1794153600,
+        "home": "Celtic",
+        "away": "Kilmarnock",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Kilmarnock - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "e474c27650d9970b5f148ceee47c60e2@skysports.com",
+        "start": "2026-11-13T19:45:00+00:00",
+        "timestamp": 1794599100,
+        "home": "Scotland",
+        "away": "North Macedonia",
+        "venue": "Hampden Park",
+        "competition": "UEFA Nations League",
+        "description": "Scotland v North Macedonia - Hampden Park - UEFA Nations League",
+        "tags": [
+            "european",
+            "hampden",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "e088368f3f54fd9481814bacf22d4bc9@skysports.com",
+        "start": "2026-11-16T19:45:00+00:00",
+        "timestamp": 1794858300,
+        "home": "Switzerland",
+        "away": "Scotland",
+        "venue": "Kybunpark",
+        "competition": "UEFA Nations League",
+        "description": "Switzerland v Scotland - Kybunpark - UEFA Nations League",
+        "tags": [
+            "european",
+            "international",
+            "scotland"
+        ]
+    },
+    {
+        "fixture_id": "a5108f40e07c08b8af26969ee65ddf26@skysports.com",
+        "start": "2026-11-21T15:00:00+00:00",
+        "timestamp": 1795273200,
+        "home": "Celtic",
+        "away": "St Mirren",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v St Mirren - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "e3ccdf4748f05316ff330bdbf8d6b851@skysports.com",
+        "start": "2026-11-21T20:00:00+00:00",
+        "timestamp": 1795291200,
+        "home": "Motherwell",
+        "away": "Rangers",
+        "venue": "Fir Park",
+        "competition": "Scottish Premiership",
+        "description": "Motherwell v Rangers - Fir Park - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "6611ff6f558634a86b0b352d3593f34b@skysports.com",
+        "start": "2026-11-24T20:00:00+00:00",
+        "timestamp": 1795550400,
+        "home": "Rangers",
+        "away": "Aberdeen",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Aberdeen - Ibrox Stadium - Scottish Premiership - Live on Sky Sports Football",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "a80dd2c9e147ef95e77acde37f0900c2@skysports.com",
+        "start": "2026-11-26T20:00:00+00:00",
+        "timestamp": 1795723200,
+        "home": "Torreense",
+        "away": "Celtic",
+        "venue": "Estadio Dr. Magalhaes Pessoa",
+        "competition": "UEFA Europa League",
+        "description": "Torreense v Celtic - Estadio Dr. Magalhaes Pessoa - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "8774c3d9edd03065d58b3c817af8ead7@skysports.com",
+        "start": "2026-11-28T15:00:00+00:00",
+        "timestamp": 1795878000,
+        "home": "Rangers",
+        "away": "Falkirk",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Falkirk - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "eba7a799bb88f2582b763d9cb99823bb@skysports.com",
+        "start": "2026-11-29T15:00:00+00:00",
+        "timestamp": 1795964400,
+        "home": "Hearts",
+        "away": "Celtic",
+        "venue": "Tynecastle",
+        "competition": "Scottish Premiership",
+        "description": "Hearts v Celtic - Tynecastle - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "5dd0a9761c46cbbb51e2b5f0030db09b@skysports.com",
+        "start": "2026-12-02T19:45:00+00:00",
+        "timestamp": 1796240700,
+        "home": "Rangers",
+        "away": "Dundee United",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Dundee United - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "15dcf4c0b56ed5792ebdd5437379e3d7@skysports.com",
+        "start": "2026-12-02T19:45:00+00:00",
+        "timestamp": 1796240700,
+        "home": "Dundee",
+        "away": "Celtic",
+        "venue": "The Scot Foam Stadium at Dens Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee v Celtic - The Scot Foam Stadium at Dens Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "69a885ed12d22257cecf7c55a9d91d31@skysports.com",
+        "start": "2026-12-05T15:00:00+00:00",
+        "timestamp": 1796482800,
+        "home": "Hibernian",
+        "away": "Rangers",
+        "venue": "Easter Road",
+        "competition": "Scottish Premiership",
+        "description": "Hibernian v Rangers - Easter Road - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "64cebf99496f745275fe7c4cb71a1c34@skysports.com",
+        "start": "2026-12-05T15:00:00+00:00",
+        "timestamp": 1796482800,
+        "home": "Celtic",
+        "away": "St Johnstone",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v St Johnstone - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "c9ded75374dcca925ea31361fc13826d@skysports.com",
+        "start": "2026-12-10T17:45:00+00:00",
+        "timestamp": 1796924700,
+        "home": "Omonia Nicosia",
+        "away": "Celtic",
+        "venue": "GSP Stadium",
+        "competition": "UEFA Europa League",
+        "description": "Omonia Nicosia v Celtic - GSP Stadium - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "c19c5081ec54dc921763c8cedb576bc6@skysports.com",
+        "start": "2026-12-12T15:00:00+00:00",
+        "timestamp": 1797087600,
+        "home": "St Johnstone",
+        "away": "Rangers",
+        "venue": "McDiarmid Park",
+        "competition": "Scottish Premiership",
+        "description": "St Johnstone v Rangers - McDiarmid Park - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "740e09ec328ee34081f9955f50d56d60@skysports.com",
+        "start": "2026-12-13T15:00:00+00:00",
+        "timestamp": 1797174000,
+        "home": "Celtic",
+        "away": "Hibernian",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Hibernian - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "bafdf22184f1e794e6aa69028c3ed638@skysports.com",
+        "start": "2026-12-19T15:00:00+00:00",
+        "timestamp": 1797692400,
+        "home": "Aberdeen",
+        "away": "Celtic",
+        "venue": "Pittodrie",
+        "competition": "Scottish Premiership",
+        "description": "Aberdeen v Celtic - Pittodrie - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "3e8449daf13dbbdeeda2b1b1b5cfdd5d@skysports.com",
+        "start": "2026-12-20T15:00:00+00:00",
+        "timestamp": 1797778800,
+        "home": "Rangers",
+        "away": "Hearts",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Hearts - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "53fd6899d05c60c4365b2826925d020d@skysports.com",
+        "start": "2026-12-26T15:00:00+00:00",
+        "timestamp": 1798297200,
+        "home": "Celtic",
+        "away": "Motherwell",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Motherwell - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "f01cc159202ff6f03f592ed5da458cbb@skysports.com",
+        "start": "2026-12-26T17:45:00+00:00",
+        "timestamp": 1798307100,
+        "home": "Kilmarnock",
+        "away": "Rangers",
+        "venue": "The BBSP Stadium, Rugby Park",
+        "competition": "Scottish Premiership",
+        "description": "Kilmarnock v Rangers - The BBSP Stadium, Rugby Park - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "0e2b9c3daeb852577292132420cf76cf@skysports.com",
+        "start": "2026-12-30T19:45:00+00:00",
+        "timestamp": 1798659900,
+        "home": "Rangers",
+        "away": "Dundee",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Dundee - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "a81d1749e56fcc5349f97f9a4d265763@skysports.com",
+        "start": "2026-12-30T19:45:00+00:00",
+        "timestamp": 1798659900,
+        "home": "Dundee United",
+        "away": "Celtic",
+        "venue": "CalForth Construction Arena at Tannadice Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee United v Celtic - CalForth Construction Arena at Tannadice Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "417b1f889a22d38ef913a97164a55d33@skysports.com",
+        "start": "2027-01-03T12:00:00+00:00",
+        "timestamp": 1798977600,
+        "home": "Rangers",
+        "away": "Celtic",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Celtic - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "ibrox",
+            "league",
+            "old_firm",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "8e7977a2d1dee720e6b843b85afddf45@skysports.com",
+        "start": "2027-01-09T15:00:00+00:00",
+        "timestamp": 1799506800,
+        "home": "Dundee United",
+        "away": "Rangers",
+        "venue": "CalForth Construction Arena at Tannadice Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee United v Rangers - CalForth Construction Arena at Tannadice Park - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "99930f73d55251a704e11189c120f6fd@skysports.com",
+        "start": "2027-01-09T15:00:00+00:00",
+        "timestamp": 1799506800,
+        "home": "Celtic",
+        "away": "Dundee",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Dundee - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "5bf48ad3841a21d6552e4a34382fb031@skysports.com",
+        "start": "2027-01-21T20:00:00+00:00",
+        "timestamp": 1800561600,
+        "home": "Celtic",
+        "away": "Marseille",
+        "venue": "Celtic Park",
+        "competition": "UEFA Europa League",
+        "description": "Celtic v Marseille - Celtic Park - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "7cb6dbfab4457b6fe9d7d87637fc8cd8@skysports.com",
+        "start": "2027-01-23T15:00:00+00:00",
+        "timestamp": 1800716400,
+        "home": "Rangers",
+        "away": "St Johnstone",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v St Johnstone - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "9860da04f48843c43ba714ee8594e9ee@skysports.com",
+        "start": "2027-01-24T15:00:00+00:00",
+        "timestamp": 1800802800,
+        "home": "St Mirren",
+        "away": "Celtic",
+        "venue": "The SMiSA Stadium",
+        "competition": "Scottish Premiership",
+        "description": "St Mirren v Celtic - The SMiSA Stadium - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "f8cb6f655e52c33444b6588996dbf0ac@skysports.com",
+        "start": "2027-01-28T20:00:00+00:00",
+        "timestamp": 1801166400,
+        "home": "Union Saint-Gilloise",
+        "away": "Celtic",
+        "venue": "Den Dreef",
+        "competition": "UEFA Europa League",
+        "description": "Union Saint-Gilloise v Celtic - Den Dreef - UEFA Europa League",
+        "tags": [
+            "celtic",
+            "european"
+        ]
+    },
+    {
+        "fixture_id": "8607c3c212985bb1c952645e4ff606fa@skysports.com",
+        "start": "2027-01-30T15:00:00+00:00",
+        "timestamp": 1801321200,
+        "home": "Aberdeen",
+        "away": "Rangers",
+        "venue": "Pittodrie",
+        "competition": "Scottish Premiership",
+        "description": "Aberdeen v Rangers - Pittodrie - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "8ce6deb076c33106e2a1c622d155692d@skysports.com",
+        "start": "2027-01-31T15:00:00+00:00",
+        "timestamp": 1801407600,
+        "home": "Celtic",
+        "away": "Falkirk",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Falkirk - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "56ad0469ad6f0f95b04beb85eedfa8ab@skysports.com",
+        "start": "2027-02-03T19:45:00+00:00",
+        "timestamp": 1801683900,
+        "home": "Rangers",
+        "away": "Kilmarnock",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Kilmarnock - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "b64507ca3696d9b7898009028f676b43@skysports.com",
+        "start": "2027-02-03T19:45:00+00:00",
+        "timestamp": 1801683900,
+        "home": "Motherwell",
+        "away": "Celtic",
+        "venue": "Fir Park",
+        "competition": "Scottish Premiership",
+        "description": "Motherwell v Celtic - Fir Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "cbcbf6d16597a60d3465d4fcf766ee0b@skysports.com",
+        "start": "2027-02-13T15:00:00+00:00",
+        "timestamp": 1802530800,
+        "home": "Falkirk",
+        "away": "Rangers",
+        "venue": "Falkirk Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Falkirk v Rangers - Falkirk Stadium - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "e0e8227ac691fd9fb890c123fc996986@skysports.com",
+        "start": "2027-02-13T15:00:00+00:00",
+        "timestamp": 1802530800,
+        "home": "Celtic",
+        "away": "Hearts",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Hearts - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "238aeb13bea2930f0fcf03335e89b902@skysports.com",
+        "start": "2027-02-20T15:00:00+00:00",
+        "timestamp": 1803135600,
+        "home": "Rangers",
+        "away": "St Mirren",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v St Mirren - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "412bc42d75083c48c7ee60d7c89f94fc@skysports.com",
+        "start": "2027-02-20T15:00:00+00:00",
+        "timestamp": 1803135600,
+        "home": "Hibernian",
+        "away": "Celtic",
+        "venue": "Easter Road",
+        "competition": "Scottish Premiership",
+        "description": "Hibernian v Celtic - Easter Road - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "518ec872a9f41a9553115fcfb9872ca9@skysports.com",
+        "start": "2027-02-27T15:00:00+00:00",
+        "timestamp": 1803740400,
+        "home": "Celtic",
+        "away": "Rangers",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Rangers - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league",
+            "old_firm",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "087aee1aa81b88c149340b95a9668805@skysports.com",
+        "start": "2027-03-13T15:00:00+00:00",
+        "timestamp": 1804950000,
+        "home": "Rangers",
+        "away": "Motherwell",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Motherwell - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "c8ce202c1ead967bf9af7b08f1527926@skysports.com",
+        "start": "2027-03-13T15:00:00+00:00",
+        "timestamp": 1804950000,
+        "home": "St Johnstone",
+        "away": "Celtic",
+        "venue": "McDiarmid Park",
+        "competition": "Scottish Premiership",
+        "description": "St Johnstone v Celtic - McDiarmid Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "747cc1b890b8a231e0e9faecf1c8657d@skysports.com",
+        "start": "2027-03-20T15:00:00+00:00",
+        "timestamp": 1805554800,
+        "home": "Hearts",
+        "away": "Rangers",
+        "venue": "Tynecastle",
+        "competition": "Scottish Premiership",
+        "description": "Hearts v Rangers - Tynecastle - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "10c203106e31f0be628a999bfb2d7e05@skysports.com",
+        "start": "2027-03-20T15:00:00+00:00",
+        "timestamp": 1805554800,
+        "home": "Celtic",
+        "away": "Aberdeen",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Aberdeen - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "447562185f3d12943f13856ca2af2ab3@skysports.com",
+        "start": "2027-04-03T14:00:00+00:00",
+        "timestamp": 1806760800,
+        "home": "Rangers",
+        "away": "Hibernian",
+        "venue": "Ibrox Stadium",
+        "competition": "Scottish Premiership",
+        "description": "Rangers v Hibernian - Ibrox Stadium - Scottish Premiership",
+        "tags": [
+            "ibrox",
+            "league",
+            "rangers",
+            "rangers_home"
+        ]
+    },
+    {
+        "fixture_id": "94ae4d912ae5eba385a886a705d4b518@skysports.com",
+        "start": "2027-04-03T14:00:00+00:00",
+        "timestamp": 1806760800,
+        "home": "Kilmarnock",
+        "away": "Celtic",
+        "venue": "The BBSP Stadium, Rugby Park",
+        "competition": "Scottish Premiership",
+        "description": "Kilmarnock v Celtic - The BBSP Stadium, Rugby Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "league"
+        ]
+    },
+    {
+        "fixture_id": "55f0cfc6cd984cd7f3b0e0587143b7ac@skysports.com",
+        "start": "2027-04-10T14:00:00+00:00",
+        "timestamp": 1807365600,
+        "home": "Dundee",
+        "away": "Rangers",
+        "venue": "The Scot Foam Stadium at Dens Park",
+        "competition": "Scottish Premiership",
+        "description": "Dundee v Rangers - The Scot Foam Stadium at Dens Park - Scottish Premiership",
+        "tags": [
+            "league",
+            "rangers",
+            "rangers_away"
+        ]
+    },
+    {
+        "fixture_id": "ce8176cdbee8388ea1b10acd4b5a1d74@skysports.com",
+        "start": "2027-04-10T14:00:00+00:00",
+        "timestamp": 1807365600,
+        "home": "Celtic",
+        "away": "Dundee United",
+        "venue": "Celtic Park",
+        "competition": "Scottish Premiership",
+        "description": "Celtic v Dundee United - Celtic Park - Scottish Premiership",
+        "tags": [
+            "celtic",
+            "celtic_park",
+            "league"
+        ]
+    }
+]
