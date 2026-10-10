@@ -1,9 +1,10 @@
 import json
 import subprocess
 import sys
-from pathlib import Path
 from datetime import datetime
-from PIL import Image, ImageDraw, ImageFont
+from pathlib import Path
+
+from PIL import Image, ImageDraw
 
 # ----------------------------
 # CONFIG
