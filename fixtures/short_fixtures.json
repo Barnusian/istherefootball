@@ -1,34 +1,48 @@
 {
     "label": "NEXT 7 DAYS",
-    "generated_at": "2026-10-08T23:32:07.112927",
+    "generated_at": "2026-10-12T21:47:39.837729",
     "fixtures": [
         {
-            "fixture_id": "b5400bae812da7a8554e4c2490b75922@skysports.com",
-            "start": "2026-10-10T14:00:00+00:00",
-            "timestamp": 1791640800,
-            "home": "Rangers",
-            "away": "Kilmarnock",
-            "venue": "Ibrox Stadium",
-            "competition": "Scottish Premiership",
-            "description": "Rangers v Kilmarnock - Ibrox Stadium - Scottish Premiership",
+            "fixture_id": "1caabfd9c981f4f1c7cf63b122d373e4@skysports.com",
+            "start": "2026-10-15T19:00:00+00:00",
+            "timestamp": 1792090800,
+            "home": "Benfica",
+            "away": "Celtic",
+            "venue": "Estadio da Luz",
+            "competition": "UEFA Europa League",
+            "description": "Benfica v Celtic - Estadio da Luz - UEFA Europa League",
             "tags": [
-                "ibrox",
-                "league",
-                "rangers",
-                "rangers_home"
+                "celtic",
+                "european"
             ]
         },
         {
-            "fixture_id": "8435a559d8be52ae9811570f385baac0@skysports.com",
-            "start": "2026-10-11T11:00:00+00:00",
-            "timestamp": 1791716400,
-            "home": "Motherwell",
-            "away": "Celtic",
-            "venue": "Fir Park",
+            "fixture_id": "7310bf33a1e54d5d908301dfa032a434@skysports.com",
+            "start": "2026-10-17T19:00:00+00:00",
+            "timestamp": 1792263600,
+            "home": "Dundee",
+            "away": "Rangers",
+            "venue": "The Scot Foam Stadium at Dens Park",
             "competition": "Scottish Premiership",
-            "description": "Motherwell v Celtic - Fir Park - Scottish Premiership - Live on Sky Sports Football",
+            "description": "Dundee v Rangers - The Scot Foam Stadium at Dens Park - Scottish Premiership - Live on Sky Sports Football",
+            "tags": [
+                "league",
+                "rangers",
+                "rangers_away"
+            ]
+        },
+        {
+            "fixture_id": "ec51f115b85624f76e8ff30bfeed6fd8@skysports.com",
+            "start": "2026-10-18T14:00:00+00:00",
+            "timestamp": 1792332000,
+            "home": "Celtic",
+            "away": "Hearts",
+            "venue": "Celtic Park",
+            "competition": "Scottish Premiership",
+            "description": "Celtic v Hearts - Celtic Park - Scottish Premiership - Live on Sky Sports Football",
             "tags": [
                 "celtic",
+                "celtic_park",
                 "league"
             ]
         }

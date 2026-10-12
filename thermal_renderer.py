@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw
 GET_FIXTURES_SCRIPT = "get_fixtures.py"
 SHORT_INPUT = Path("fixtures/short_fixtures.json")
 OUTPUT_IMG = Path("output/fixture_report.png")
-WIDTH = 384
+WIDTH = 512
 
 class ThermalRenderer:
     def __init__(self):
