@@ -6,17 +6,28 @@ from datetime import datetime, timedelta, date
 # ----------------------------
 # CONFIG
 # ----------------------------
-FIXTURES_FILE = Path("fixtures/fixtures.json")
-SHORT_OUTPUT = Path("fixtures/short_fixtures.json")
+FIXTURES_FILE = Path("fixtures/fixtures_*.json")
 
 # ----------------------------
 # DATA HANDLING
 # ----------------------------
 
 def load_fixtures():
-    if not FIXTURES_FILE.exists():
-        raise FileNotFoundError(f"Missing file: {FIXTURES_FILE}")
-    with open(FIXTURES_FILE, "r", encoding="utf-8") as f:
+    dated_files = []
+    for path in FIXTURES_FILE.parent.glob(FIXTURES_FILE.name):
+        try:
+            file_date = date.fromisoformat(path.stem[len("fixtures_"):])
+        except ValueError:
+            continue
+
+        if path.stem == f"fixtures_{file_date.isoformat()}":
+            dated_files.append((file_date, path))
+
+    if not dated_files:
+        raise FileNotFoundError(f"Missing file matching: {FIXTURES_FILE}")
+
+    _, latest_file = max(dated_files, key=lambda item: item[0])
+    with open(latest_file, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def get_fixtures_in_range(fixtures, days_to_look_ahead):
@@ -66,9 +77,7 @@ def main():
             print("Argument must be a number.")
             return
     else:
-        # Fallback for manual testing
-        val = input("Enter number of days (1 for today, 7 for week): ").strip()
-        days = int(val) if val.isdigit() else 1
+        days = 7
 
     # Adjusting logic: 
     # If user wants "1 day" (today), lookahead is 0. 
@@ -106,10 +115,14 @@ def main():
         "fixtures": matches
     }
     
-    with open(SHORT_OUTPUT, "w", encoding="utf-8") as f:
+    short_output = Path("fixtures") / (
+        f"short_fixtures_{date.today():%m_%d}_{lookahead + 1}day.json"
+    )
+
+    with open(short_output, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=4)
     
-    print(f"Filtered {len(matches)} matches into {SHORT_OUTPUT}")
+    print(f"Filtered {len(matches)} matches into {short_output}")
 
 if __name__ == "__main__":
     main()

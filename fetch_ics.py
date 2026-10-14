@@ -11,7 +11,7 @@ from icalendar import Calendar
 # ----------------------------
 
 OUTPUT_DIR = Path("fixtures")
-OUTPUT_FILE = OUTPUT_DIR / "fixtures.json"
+OUTPUT_FILE = OUTPUT_DIR / f"fixtures_{datetime.now().date().isoformat()}.json"
 
 ICS_SOURCES = {
     "Rangers": "https://www.skysports.com/calendars/football/fixtures/teams/rangers",

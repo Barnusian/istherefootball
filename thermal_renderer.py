@@ -1,24 +1,50 @@
 import json
 import subprocess
 import sys
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 # ----------------------------
 # CONFIG
 # ----------------------------
 GET_FIXTURES_SCRIPT = "get_fixtures.py"
-SHORT_INPUT = Path("fixtures/short_fixtures.json")
+SHORT_INPUT_DIR = Path("fixtures")
 OUTPUT_IMG = Path("output/fixture_report.png")
 WIDTH = 512
+FONT_SIZE = 24
+LINE_GAP = 8
+REPORT_ART = (
+    "FIXTURE REPORT",
+    "     .------.",
+    "   .' .--.   '.",
+    "  /  /    \\   \\",
+    " |  |      |   |",
+    "  \\  \\    /   /",
+    "   '. '--'  .'",
+    "     '------'",
+)
+FONT_PATHS = (
+    Path(r"C:\Windows\Fonts\consola.ttf"),
+    Path(r"C:\Windows\Fonts\cour.ttf"),
+    Path("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"),
+    Path("/usr/share/fonts/truetype/liberation2/LiberationMono-Regular.ttf"),
+    Path("/System/Library/Fonts/Menlo.ttc"),
+)
 
 class ThermalRenderer:
     def __init__(self):
         self.y = 0
         self.canvas = Image.new("1", (WIDTH, 4000), color=1)
         self.draw = ImageDraw.Draw(self.canvas)
+        font_path = next((path for path in FONT_PATHS if path.is_file()), None)
+        if font_path is None:
+            raise FileNotFoundError("Could not find a supported monospaced font.")
+        self.font = ImageFont.truetype(str(font_path), FONT_SIZE)
+        self.font_ascent, self.font_descent = self.font.getmetrics()
+        self.line_height = self.font_ascent + self.font_descent
+        self.line_spacing = self.line_height + LINE_GAP
 
     def refresh_data(self, days):
         """Triggers the data provider script before rendering."""
@@ -29,43 +55,71 @@ class ThermalRenderer:
             print(f"Error refreshing fixtures: {e}")
             sys.exit(1)
 
-    def add_text(self, text, center=True):
-        h = 15
-        # Character-width math for Pillow's default font
-        x = (WIDTH - (len(text) * 6)) // 2 if center else 10
-        self.draw.text((x, self.y), text, fill=0)
-        self.y += h + 5
+    def add_text(self, text):
+        self.draw.text(
+            (WIDTH // 2, self.y + self.font_ascent),
+            text,
+            fill=0,
+            font=self.font,
+            anchor="ms",
+        )
+        self.y += self.line_spacing
 
     def add_alert(self, text):
         """Draws an inset black rectangle with white text (Gugon's Tweak)."""
-        h = 30
-        # Inset by 40px from each side
-        self.draw.rectangle([40, self.y, WIDTH - 40, self.y + h], fill=0)
-        x = (WIDTH - (len(text) * 6)) // 2
-        self.draw.text((x, self.y + 8), text, fill=1)
-        self.y += h + 10
+        horizontal_margin = WIDTH // 12
+        self.draw.rectangle(
+            [
+                horizontal_margin,
+                self.y,
+                WIDTH - horizontal_margin,
+                self.y + self.line_height - 1,
+            ],
+            fill=0,
+        )
+        self.draw.text(
+            (WIDTH // 2, self.y + self.font_ascent),
+            text,
+            fill=1,
+            font=self.font,
+            anchor="ms",
+        )
+        self.y += self.line_spacing
 
     def render(self, days):
         # 1. Update data
         self.refresh_data(days)
 
         # 2. Load the specific slice of data
-        if not SHORT_INPUT.exists():
-            print("Failed to find short_fixtures.json after refresh.")
+        short_input = SHORT_INPUT_DIR / (
+            f"short_fixtures_{date.today():%m_%d}_{max(1, days)}day.json"
+        )
+        if not short_input.exists():
+            print(f"Failed to find {short_input} after refresh.")
             return
 
-        with open(SHORT_INPUT, "r") as f:
+        with open(short_input, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         # 3. Header
         self.y = 20
-        self.add_text(f"GLASGOW: {data['label']}", center=True)
-        self.add_text(datetime.now().strftime("%H:%M"), center=True)
-        self.y += 10
-
+        for line in REPORT_ART:
+            self.add_text(line)
+        self.add_text(f"GLASGOW: {data['label']}")
+        start_date = date.today()
+        end_date = start_date + timedelta(days=max(1, days) - 1)
+        date_format = "%a %d %b"
+        if start_date == end_date:
+            date_label = start_date.strftime(date_format)
+        else:
+            date_label = (
+                f"{start_date.strftime(date_format)} - "
+                f"{end_date.strftime(date_format)}"
+            )
+        self.add_text(date_label)
         # 4. Content Logic
         if not data['fixtures']:
-            self.add_text("STREETS ARE CLEAR!", center=True)
+            self.add_text("STREETS ARE CLEAR!")
         else:
             for f in data['fixtures']:
                 # Alert Priority Logic
@@ -74,15 +128,12 @@ class ThermalRenderer:
                 elif "old_firm" in f['tags']:
                     self.add_alert("!! OLD FIRM !!")
                 else:
-                    # Simple divider for non-critical games
-                    self.draw.line([(40, self.y), (WIDTH - 40, self.y)], fill=0)
-                    self.y += 15
+                    self.add_text("-" * 30)
                 
                 dt = datetime.fromisoformat(f['start'])
                 self.add_text(f"{dt.strftime('%a %d %b')} @ {dt.strftime('%H:%M')}")
                 self.add_text(f"{f['home']} v {f['away']}")
                 self.add_text(f"{f['venue']}")
-                self.y += 10 # Breathing room after each entry
 
         # 5. Export
         final = self.canvas.crop((0, 0, WIDTH, self.y + 40))
@@ -91,10 +142,11 @@ class ThermalRenderer:
         final.show()
 
 if __name__ == "__main__":
-    # Pull requested days from CLI, default to 1 (Today)
+    # Pull requested days from CLI, default to 7.
     try:
-        requested_days = int(sys.argv[1]) if len(sys.argv) > 1 else 1
+        requested_days = int(sys.argv[1]) if len(sys.argv) > 1 else 7
     except ValueError:
-        requested_days = 1
+        print("Argument must be a number.")
+        sys.exit(1)
 
     ThermalRenderer().render(requested_days)
