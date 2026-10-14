@@ -6,7 +6,8 @@ from datetime import datetime, timedelta, date
 # ----------------------------
 # CONFIG
 # ----------------------------
-FIXTURES_FILE = Path("fixtures/fixtures_*.json")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+FIXTURES_FILE = PROJECT_ROOT / "fixtures" / "long_fixtures_*.json"
 
 # ----------------------------
 # DATA HANDLING
@@ -16,11 +17,11 @@ def load_fixtures():
     dated_files = []
     for path in FIXTURES_FILE.parent.glob(FIXTURES_FILE.name):
         try:
-            file_date = date.fromisoformat(path.stem[len("fixtures_"):])
+            file_date = date.fromisoformat(path.stem[len("long_fixtures_"):])
         except ValueError:
             continue
 
-        if path.stem == f"fixtures_{file_date.isoformat()}":
+        if path.stem == f"long_fixtures_{file_date.isoformat()}":
             dated_files.append((file_date, path))
 
     if not dated_files:
@@ -69,7 +70,7 @@ def main():
         return
 
     # 2. Get the lookahead range from CLI or Prompt
-    # Usage: python get_fixtures.py 7
+    # Usage: python scripts/produce_fixtures.py 7
     if len(sys.argv) > 1:
         try:
             days = int(sys.argv[1])
@@ -115,7 +116,7 @@ def main():
         "fixtures": matches
     }
     
-    short_output = Path("fixtures") / (
+    short_output = PROJECT_ROOT / "fixtures" / (
         f"short_fixtures_{date.today():%m_%d}_{lookahead + 1}day.json"
     )
 

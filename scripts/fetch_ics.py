@@ -10,8 +10,9 @@ from icalendar import Calendar
 # CONFIG
 # ----------------------------
 
-OUTPUT_DIR = Path("fixtures")
-OUTPUT_FILE = OUTPUT_DIR / f"fixtures_{datetime.now().date().isoformat()}.json"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+OUTPUT_DIR = PROJECT_ROOT / "fixtures"
+OUTPUT_FILE = OUTPUT_DIR / f"long_fixtures_{datetime.now().date().isoformat()}.json"
 
 ICS_SOURCES = {
     "Rangers": "https://www.skysports.com/calendars/football/fixtures/teams/rangers",

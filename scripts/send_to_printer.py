@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib import error, request
 from urllib.parse import urlparse
 
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(PROJECT_ROOT / ".env")
 DEFAULT_IMAGE_PATH = PROJECT_ROOT / "output" / "fixture_report.png"
 

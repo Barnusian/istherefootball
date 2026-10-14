@@ -9,9 +9,10 @@ from PIL import Image, ImageDraw, ImageFont
 # ----------------------------
 # CONFIG
 # ----------------------------
-GET_FIXTURES_SCRIPT = "get_fixtures.py"
-SHORT_INPUT_DIR = Path("fixtures")
-OUTPUT_IMG = Path("output/fixture_report.png")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+GET_FIXTURES_SCRIPT = Path(__file__).resolve().with_name("produce_fixtures.py")
+SHORT_INPUT_DIR = PROJECT_ROOT / "fixtures"
+OUTPUT_IMG = PROJECT_ROOT / "output" / "fixture_report.png"
 WIDTH = 512
 FONT_SIZE = 24
 LINE_GAP = 8
@@ -33,7 +34,7 @@ FONT_PATHS = (
     Path("/System/Library/Fonts/Menlo.ttc"),
 )
 
-class ThermalRenderer:
+class ImageRenderer:
     def __init__(self):
         self.y = 0
         self.canvas = Image.new("1", (WIDTH, 4000), color=1)
@@ -50,7 +51,10 @@ class ThermalRenderer:
         """Triggers the data provider script before rendering."""
         print(f"Refreshing data for {days} day(s)...")
         try:
-            subprocess.run([sys.executable, GET_FIXTURES_SCRIPT, str(days)], check=True)
+            subprocess.run(
+                [sys.executable, str(GET_FIXTURES_SCRIPT), str(days)],
+                check=True,
+            )
         except subprocess.CalledProcessError as e:
             print(f"Error refreshing fixtures: {e}")
             sys.exit(1)
@@ -149,4 +153,4 @@ if __name__ == "__main__":
         print("Argument must be a number.")
         sys.exit(1)
 
-    ThermalRenderer().render(requested_days)
+    ImageRenderer().render(requested_days)
