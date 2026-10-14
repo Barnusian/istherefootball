@@ -143,7 +143,6 @@ class ImageRenderer:
         final = self.canvas.crop((0, 0, WIDTH, self.y + 40))
         final.save(OUTPUT_IMG)
         print(f"Report rendered to {OUTPUT_IMG}")
-        final.show()
 
 if __name__ == "__main__":
     # Pull requested days from CLI, default to 7.
