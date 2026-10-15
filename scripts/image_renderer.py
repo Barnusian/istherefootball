@@ -27,6 +27,12 @@ REPORT_ART = (
     "     '------'",
 )
 FONT_PATH_PAIRS = (
+
+    (
+        Path("/usr/share/fonts/truetype/consola/consola.ttf"),
+        Path("/usr/share/fonts/truetype/consola/consolai.ttf"),
+    ),
+
     (Path(r"C:\Windows\Fonts\consola.ttf"), Path(r"C:\Windows\Fonts\consolai.ttf")),
     (Path(r"C:\Windows\Fonts\cour.ttf"), Path(r"C:\Windows\Fonts\couri.ttf")),
     (
