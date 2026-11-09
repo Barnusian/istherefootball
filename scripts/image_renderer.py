@@ -232,7 +232,7 @@ class ImageRenderer:
 
         # 2. Load the specific slice of data
         short_input = SHORT_INPUT_DIR / (
-            f"short_fixtures_{date.today():%m_%d}_{max(1, days)}day.json"
+            f"short_fixtures_{date.today():%Y_%m_%d}_{max(1, days)}day.json"
         )
         if not short_input.exists():
             print(f"Failed to find {short_input} after refresh.")
@@ -241,12 +241,17 @@ class ImageRenderer:
         with open(short_input, "r", encoding="utf-8") as f:
             data = json.load(f)
 
+        self.render_report(data, date.today(), days, OUTPUT_IMG, data["label"])
+
+    def render_report(self, data, start_date, days, output_image, report_label):
+        self.canvas = Image.new("1", (WIDTH, 4000), color=1)
+        self.draw = ImageDraw.Draw(self.canvas)
+
         # 3. Header
         self.y = 20
         for line in REPORT_ART:
             self.add_text(line)
-        self.add_text(f"GLASGOW: {data['label']}")
-        start_date = date.today()
+        self.add_text(f"GLASGOW: {report_label}")
         self.add_date_range(start_date, days)
         # 4. Content Logic
         self.add_separator(self.separator)
@@ -293,8 +298,9 @@ class ImageRenderer:
 
         # 5. Export
         final = self.canvas.crop((0, 0, WIDTH, self.y + 40))
-        final.save(OUTPUT_IMG)
-        print(f"Report rendered to {OUTPUT_IMG}")
+        output_image.parent.mkdir(parents=True, exist_ok=True)
+        final.save(output_image)
+        print(f"Report rendered to {output_image}")
 
 if __name__ == "__main__":
     # Pull requested days from CLI, default to 7.

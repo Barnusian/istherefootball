@@ -94,22 +94,20 @@ def main():
     
     if not matches:
         print("Quiet streets! No major games found.")
-        return
+    else:
+        for f in matches:
+            # Localize time for display
+            dt = datetime.fromisoformat(f["start"])
+            time_str = dt.strftime("%H:%M")
+            date_str = dt.strftime("%a %d %b")
 
-    for f in matches:
-        # Localize time for display
-        dt = datetime.fromisoformat(f["start"])
-        time_str = dt.strftime("%H:%M")
-        date_str = dt.strftime("%a %d %b")
-        
-        # Highlight Ibrox for your specific avoidance needs
-        alert = "!! IBROX !!" if "ibrox" in f["tags"] else ""
-        
-        print(f"{date_str} @ {time_str} | {f['home']} v {f['away']} {alert}")
-        print(f"   Venue: {f['venue']}")
-        print(f"   Tags:  {', '.join(f['tags'])}\n")
+            # Highlight Ibrox for your specific avoidance needs
+            alert = "!! IBROX !!" if "ibrox" in f["tags"] else ""
 
-        # --- NEW: SAVE TO SHORT_FIXTURES.JSON ---
+            print(f"{date_str} @ {time_str} | {f['home']} v {f['away']} {alert}")
+            print(f"   Venue: {f['venue']}")
+            print(f"   Tags:  {', '.join(f['tags'])}\n")
+
     output_data = {
         "label": date_label,
         "generated_at": datetime.now().isoformat(),
@@ -117,7 +115,7 @@ def main():
     }
     
     short_output = PROJECT_ROOT / "fixtures" / (
-        f"short_fixtures_{date.today():%m_%d}_{lookahead + 1}day.json"
+        f"short_fixtures_{date.today():%Y_%m_%d}_{lookahead + 1}day.json"
     )
 
     with open(short_output, "w", encoding="utf-8") as f:
