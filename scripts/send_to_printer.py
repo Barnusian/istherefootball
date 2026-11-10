@@ -2,6 +2,7 @@
 """Send a PNG fixture report to the Raspberry Pi thermal-printer daemon."""
 
 import argparse
+import json
 import os
 import sys
 from dotenv import load_dotenv
@@ -59,8 +60,8 @@ def load_printer_config():
     return base_url, token
 
 
-def send_image(image_path, base_url, token):
-    """Upload the supplied PNG to the printer daemon."""
+def post_image(image_path, base_url, token):
+    """Post PNG bytes to the printer daemon and return its HTTP response."""
     if not image_path.exists() or not image_path.is_file():
         raise FileNotFoundError(f"Image not found: {image_path}")
 
@@ -77,14 +78,29 @@ def send_image(image_path, base_url, token):
         method="POST",
     )
 
+    with request.urlopen(req, timeout=20) as response:
+        status = getattr(response, "status", response.getcode())
+        message = response.read().decode("utf-8", errors="replace").strip()
+    return status, message
+
+
+def print_was_confirmed(status, message):
+    """Return whether the daemon explicitly confirmed a completed print."""
     try:
-        with request.urlopen(req, timeout=10) as response:
-            status = getattr(response, "status", response.getcode())
-            message = response.read().decode("utf-8", errors="replace").strip()
-            if message:
-                print(f"Print accepted by daemon (HTTP {status}): {message}")
-            else:
-                print(f"Print accepted by daemon (HTTP {status}).")
+        result = json.loads(message)
+    except json.JSONDecodeError:
+        return False
+    return (
+        status == 200
+        and isinstance(result, dict)
+        and result.get("status") == "printed"
+    )
+
+
+def send_image(image_path, base_url, token):
+    """Upload the supplied PNG and report whether the daemon confirmed printing."""
+    try:
+        status, message = post_image(image_path, base_url, token)
 
     except error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace").strip()
@@ -96,6 +112,16 @@ def send_image(image_path, base_url, token):
         reason = getattr(exc, "reason", exc)
         print(f"Connection to printer daemon failed: {reason}", file=sys.stderr)
         raise SystemExit(1) from None
+
+    if not print_was_confirmed(status, message):
+        detail = message or "No response body returned."
+        print(
+            f"Printer did not confirm printing (HTTP {status}): {detail}",
+            file=sys.stderr,
+        )
+        raise SystemExit(1)
+
+    print(f"Print accepted by daemon (HTTP {status}): {message}")
 
 
 def parse_args():

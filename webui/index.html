@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050805">
+  <title>Is There Football? — Glasgow Fixture Reports</title>
+  <link rel="stylesheet" href="static/style.css?v=4">
+</head>
+<body>
+  <main class="terminal">
+    <header class="masthead">
+      <pre class="ascii-header" aria-label="FITBAW REPORT">
+          _______  ___   __   __  _______  __   __  ______    _______  _______        _______  __   __  _______
+         |       ||   | |  |_|  ||       ||  | |  ||    _ |  |       ||       |      |       ||  |_|  ||       |          __
+         |    ___||   | |       ||_     _||  | |  ||   | ||  |    ___||  _____|      |    ___||       ||    ___|       .'".'"'.
+         |   |___ |   | |       |  |   |  |  |_|  ||   |_||_ |   |___ | |_____       |   |___ |       ||   |___       :._.""._.:
+         |    ___||   |  |     |   |   |  |       ||    __  ||    ___||_____  | ___  |    ___| |     | |    ___|      :  \__/  :
+         |   |    |   | |   _   |  |   |  |       ||   |  | ||   |___  _____| ||   | |   |___ |   _   ||   |___        './  \.'
+         |___|    |___| |__| |__|  |___|  |_______||___|  |_||_______||_______||___| |_______||__| |__||_______|          ""
+
+         Fortnightly match forecast
+      </pre>
+    </header>
+
+    <section class="receipts" aria-label="Fixture reports">
+      <figure class="receipt receipt-this-week">
+        <figcaption>THIS WEEK</figcaption>
+        <div class="paper">
+          <img
+            src="static/receipts/this_week.png"
+            alt="This week's Glasgow football fixture report"
+            data-fallback="This week's receipt is not available yet. Run scripts/produce_web_fixtures.py to generate it."
+          >
+          <button
+            class="print-overlay"
+            type="button"
+            data-image="this_week.png"
+            aria-label="Print this week's receipt"
+            aria-live="polite"
+          >PRINT NOW?</button>
+          <p class="image-fallback" hidden></p>
+        </div>
+      </figure>
+
+      <figure class="receipt receipt-next-week">
+        <figcaption>NEXT WEEK</figcaption>
+        <div class="paper">
+          <img
+            src="static/receipts/next_week.png"
+            alt="Next week's Glasgow football fixture report"
+            data-fallback="Next week's receipt is not available yet. Run scripts/produce_web_fixtures.py to generate it."
+          >
+          <button
+            class="print-overlay"
+            type="button"
+            data-image="next_week.png"
+            aria-label="Print next week's receipt"
+            aria-live="polite"
+          >PRINT NOW?</button>
+          <p class="image-fallback" hidden></p>
+        </div>
+      </figure>
+    </section>
+
+    <footer class="terminal-footer">
+      <span>IBROX / GLASGOW</span>
+      <span>REPORTS GENERATED LOCALLY</span>
+    </footer>
+  </main>
+
+  <script src="static/display.js?v=3"></script>
+</body>
+</html>

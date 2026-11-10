@@ -1,4 +1,5 @@
 import json
+import random
 import subprocess
 import sys
 from datetime import date, datetime, timedelta
@@ -13,19 +14,14 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 GET_FIXTURES_SCRIPT = Path(__file__).resolve().with_name("produce_fixtures.py")
 SHORT_INPUT_DIR = PROJECT_ROOT / "fixtures"
 OUTPUT_IMG = PROJECT_ROOT / "output" / "fixture_report.png"
+HEADER_ART_DIR = PROJECT_ROOT / "text"
+HEADER_ART_FILES = tuple(
+    HEADER_ART_DIR / f"header {index}.txt" for index in range(1, 5)
+)
 WIDTH = 512
 FONT_SIZE = 24
 LINE_GAP = 8
-REPORT_ART = (
-    "FIXTURE REPORT",
-    "     .------.",
-    "   .' .--.   '.",
-    "  /  /    \\   \\",
-    " |  |      |   |",
-    "  \\  \\    /   /",
-    "   '. '--'  .'",
-    "     '------'",
-)
+REPORT_ART = ("FIXTURE REPORT",)
 FONT_PATH_PAIRS = (
 
     (
@@ -199,6 +195,14 @@ class ImageRenderer:
         self.draw_centered_text(text, self.y, fill=0)
         self.y += self.line_spacing
 
+    def add_ascii_art(self, lines):
+        widest_line = max(lines, key=len)
+        first_column = (self.content_width_characters - len(widest_line)) // 2
+        for line in lines:
+            if line:
+                self.draw_grid_text(line, first_column, self.y)
+            self.y += self.line_spacing
+
     def add_date_range(self, start_date, days):
         weekday_names = ("MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN")
         dates = [
@@ -251,6 +255,12 @@ class ImageRenderer:
         self.y = 20
         for line in REPORT_ART:
             self.add_text(line)
+        header_art = random.choice(HEADER_ART_FILES).read_text(
+            encoding="utf-8"
+        ).splitlines()
+        if not header_art:
+            raise ValueError("Selected header art file is empty.")
+        self.add_ascii_art(header_art)
         self.add_text(f"GLASGOW: {report_label}")
         self.add_date_range(start_date, days)
         # 4. Content Logic

@@ -44,6 +44,7 @@ process environment:
 
 - `PRINT_DAEMON_URL`: the printer daemon's base HTTP or HTTPS URL.
 - `PRINT_TOKEN`: the bearer token configured for that daemon.
+- `WEBUI_PORT`: the local web UI port (defaults to `8000`).
 
 The `.env` file is ignored by Git. Do not commit printer credentials.
 
@@ -108,6 +109,23 @@ run date, and `next_week.png` contains the following seven. These are rolling
 image or change the configured cron jobs. It requires a previously fetched
 full-range fixture file.
 
+Preview the web UI and enable its receipt print buttons from the project root:
+
+```text
+python scripts/web_server.py
+```
+
+Then open `http://localhost:8000` in a browser, replacing `8000` with your
+configured `WEBUI_PORT` if you changed it. Generate the web fixture images first
+so the receipts are available. The print buttons send the selected PNG from the
+local server directly to the printer daemon; the daemon URL and token remain
+server-side and use the same `PRINT_DAEMON_URL` and `PRINT_TOKEN` configuration
+as `scripts/send_to_printer.py`. If the result is ambiguous, check the printer
+before retrying. Stop the local server with Ctrl+C when finished. To preview
+without enabling printing, the files can still be served with
+`python -m http.server 8000 --directory webui`; change `8000` to the desired
+port.
+
 ## Data and report details
 
 The full-range fixture file is named `long_fixtures_YYYY-MM-DD.json`. Fixture
@@ -119,7 +137,9 @@ context.
 The rolling report JSON contains a label, generation time and a `fixtures` list.
 The renderer orders fixtures by start time, groups them by date and indicates
 days without fixtures. It highlights Ibrox and Old Firm matches in the report.
-The image is a 512-pixel-wide, monochrome receipt-style PNG.
+Each generated image includes one randomly selected header design from the
+four text files in `text/`. The image is a 512-pixel-wide, monochrome
+receipt-style PNG.
 
 Generated fixture JSON files are ignored by Git. Keep a locally fetched
 full-range file available before running the producer or renderer. The generated
@@ -161,7 +181,7 @@ value, and `1` in the last field means Monday on this system.
 
 ## Not implemented
 
-The web report script generates rolling **This Week** and **Next Week** receipt
-images, but it does not produce Monday-to-Sunday calendar weeks or print either
-image. The Monday cron entry continues to invoke the existing rolling-report
-print workflow. There is no companion web UI yet.
+The static companion UI displays the generated rolling **This Week** and **Next
+Week** receipt images. It does not fetch fixture data or generate Monday-to-
+Sunday calendar weeks. The Monday cron entry continues to invoke the existing
+rolling-report print workflow, separately from the web images.

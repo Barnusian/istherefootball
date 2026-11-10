@@ -19,4 +19,4 @@ fixtures/*
 webui/data/*.json
 webui/static/receipts/*.png
 AGENTS.md
-send_to_printer_agent_instructions.md
+.agents
