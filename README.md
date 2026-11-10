@@ -155,8 +155,9 @@ web JSON and receipt PNGs are also ignored by Git.
 The web UI is served by `scripts/web_server.py` using Flask and Waitress. It
 binds to `WEBUI_HOST` (default `0.0.0.0`) and `WEBUI_PORT` (default `8000`).
 The checked-in unit is
-`deploy/systemd/istherefootball-web.service`. It runs as a `systemd --user`
-service for the `barnusian` account, using the project's virtual environment.
+`deploy/systemd/istherefootball-web.service`. It runs as a system-wide systemd
+service, managed by the system service manager and running with the unprivileged
+`barnusian` account.
 
 Connect to RATBOX, then clone the repository and install its dependencies:
 
@@ -191,28 +192,29 @@ then generate the web images:
 .venv/bin/python scripts/produce_web_fixtures.py
 ```
 
-Install the checked-in unit and enable it:
+If an older `systemd --user` instance is installed, stop and disable it first
+to avoid having two servers compete for the same port:
 
 ```text
-mkdir -p ~/.config/systemd/user
-install -m 0644 deploy/systemd/istherefootball-web.service ~/.config/systemd/user/istherefootball-web.service
-systemctl --user daemon-reload
-systemctl --user enable --now istherefootball-web.service
-systemctl --user status istherefootball-web.service
+systemctl --user disable --now istherefootball-web.service
 ```
 
-To view the service log:
+Install the checked-in unit in the system service directory and enable it at
+boot:
 
 ```text
-journalctl --user -u istherefootball-web.service -f
+sudo install -m 0644 deploy/systemd/istherefootball-web.service /etc/systemd/system/istherefootball-web.service
+sudo systemctl daemon-reload
+sudo systemctl enable --now istherefootball-web.service
+sudo systemctl status istherefootball-web.service
 ```
 
-As a user service, it runs under `barnusian` without root privileges. To have
-systemd start it after a reboot even when that account has not logged in yet,
-an administrator must enable lingering once:
+The system service manager starts this service at boot without requiring
+`barnusian` to log in or enabling user lingering. The process itself runs as
+`barnusian`, not root. View its logs with:
 
 ```text
-sudo loginctl enable-linger barnusian
+sudo journalctl -u istherefootball-web.service -f
 ```
 
 The UI is available on RATBOX at `http://localhost:8000` (or the configured
@@ -246,15 +248,14 @@ reports and logs are machine-local and should be kept in place. The cron
 configuration is also managed on RATBOX and is not changed by `git pull`.
 
 The cron jobs run their scripts directly from the checkout, so they need no
-restart after an update. If the web UI is installed using the user service
-above, refresh the installed unit in case its definition changed, then restart
-it to load updated code or configuration:
+restart after an update. Refresh the installed system unit in case its
+definition changed, then restart it to load updated code or configuration:
 
 ```text
-install -m 0644 deploy/systemd/istherefootball-web.service ~/.config/systemd/user/istherefootball-web.service
-systemctl --user daemon-reload
-systemctl --user restart istherefootball-web.service
-systemctl --user status istherefootball-web.service
+sudo install -m 0644 deploy/systemd/istherefootball-web.service /etc/systemd/system/istherefootball-web.service
+sudo systemctl daemon-reload
+sudo systemctl restart istherefootball-web.service
+sudo systemctl status istherefootball-web.service
 ```
 
 If refreshed web receipts are needed, run

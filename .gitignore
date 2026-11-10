@@ -20,3 +20,4 @@ webui/data/*.json
 webui/static/receipts/*.png
 AGENTS.md
 .agents
+output/fixture_report.png
