@@ -95,7 +95,7 @@ body {
   height: 4.6em;
   place-items: center;
   border: 0;
-  background: rgb(255 255 255 / 82%);
+  background: rgba(232, 249, 236, 0.82);
   color: #102514;
   cursor: pointer;
   font: inherit;
@@ -145,8 +145,8 @@ body {
   justify-content: space-between;
   gap: 12px;
   padding-top: 14px;
-  border-top: 1px solid var(--dim-green);
-  color: #80c98a;
+  border-top: 1px solid var(--terminal-green);
+  color: var(--terminal-green);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
 }
