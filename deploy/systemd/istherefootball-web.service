@@ -1,0 +1,13 @@
+[Unit]
+Description=Is There Football web UI
+
+[Service]
+Type=simple
+WorkingDirectory=/home/barnusian/istherefootball
+ExecStart=/home/barnusian/istherefootball/.venv/bin/python /home/barnusian/istherefootball/scripts/web_server.py
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

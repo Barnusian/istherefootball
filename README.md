@@ -44,7 +44,9 @@ process environment:
 
 - `PRINT_DAEMON_URL`: the printer daemon's base HTTP or HTTPS URL.
 - `PRINT_TOKEN`: the bearer token configured for that daemon.
-- `WEBUI_PORT`: the local web UI port (defaults to `8000`).
+- `WEBUI_HOST`: the interface to serve on (defaults to `0.0.0.0`, all IPv4
+  interfaces; use `127.0.0.1` for local-only access).
+- `WEBUI_PORT`: the web UI port (defaults to `8000`).
 
 The `.env` file is ignored by Git. Do not commit printer credentials.
 
@@ -115,16 +117,17 @@ Preview the web UI and enable its receipt print buttons from the project root:
 python scripts/web_server.py
 ```
 
-Then open `http://localhost:8000` in a browser, replacing `8000` with your
-configured `WEBUI_PORT` if you changed it. Generate the web fixture images first
-so the receipts are available. The print buttons send the selected PNG from the
-local server directly to the printer daemon; the daemon URL and token remain
-server-side and use the same `PRINT_DAEMON_URL` and `PRINT_TOKEN` configuration
-as `scripts/send_to_printer.py`. If the result is ambiguous, check the printer
-before retrying. Stop the local server with Ctrl+C when finished. To preview
-without enabling printing, the files can still be served with
-`python -m http.server 8000 --directory webui`; change `8000` to the desired
-port.
+The server uses Flask and Waitress. On the server itself, open
+`http://localhost:8000`; from another device on the network, open
+`http://<server-LAN-IP>:8000`. Replace `8000` with your configured
+`WEBUI_PORT` if you changed it. `WEBUI_HOST` defaults to `0.0.0.0` so other
+devices can connect; use `127.0.0.1` to restrict it to the same machine.
+Generate the web fixture images first so the receipts are available. The print
+buttons send the selected PNG from the local server directly to the printer
+daemon; the daemon URL and token remain server-side and use the same
+`PRINT_DAEMON_URL` and `PRINT_TOKEN` configuration as
+`scripts/send_to_printer.py`. If the result is ambiguous, check the printer
+before retrying. Stop the server with Ctrl+C when finished.
 
 ## Data and report details
 
@@ -146,6 +149,118 @@ full-range file available before running the producer or renderer. The generated
 web JSON and receipt PNGs are also ignored by Git.
 
 ## Scheduled Jobs
+
+### First-time web UI deployment on RATBOX
+
+The web UI is served by `scripts/web_server.py` using Flask and Waitress. It
+binds to `WEBUI_HOST` (default `0.0.0.0`) and `WEBUI_PORT` (default `8000`).
+The checked-in unit is
+`deploy/systemd/istherefootball-web.service`. It runs as a `systemd --user`
+service for the `barnusian` account, using the project's virtual environment.
+
+Connect to RATBOX, then clone the repository and install its dependencies:
+
+```text
+cd /home/barnusian
+git clone https://github.com/Barnusian/istherefootball.git
+cd /home/barnusian/istherefootball
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m pip check
+```
+
+Create `/home/barnusian/istherefootball/.env` with the web server and, if the
+web UI's print buttons should be enabled, printer settings:
+
+```text
+PRINT_DAEMON_URL=https://printer-daemon.example
+PRINT_TOKEN=replace-with-the-daemon-token
+WEBUI_HOST=0.0.0.0
+WEBUI_PORT=8000
+```
+
+Replace the example URL and token with the real printer configuration. Keep
+this file private; it is ignored by Git. The web settings are optional and
+default to `WEBUI_HOST=0.0.0.0` and `WEBUI_PORT=8000`.
+
+The UI needs generated receipt images. On a new checkout, fetch fixtures first,
+then generate the web images:
+
+```text
+.venv/bin/python scripts/fetch_ics.py
+.venv/bin/python scripts/produce_web_fixtures.py
+```
+
+Install the checked-in unit and enable it:
+
+```text
+mkdir -p ~/.config/systemd/user
+install -m 0644 deploy/systemd/istherefootball-web.service ~/.config/systemd/user/istherefootball-web.service
+systemctl --user daemon-reload
+systemctl --user enable --now istherefootball-web.service
+systemctl --user status istherefootball-web.service
+```
+
+To view the service log:
+
+```text
+journalctl --user -u istherefootball-web.service -f
+```
+
+As a user service, it runs under `barnusian` without root privileges. To have
+systemd start it after a reboot even when that account has not logged in yet,
+an administrator must enable lingering once:
+
+```text
+sudo loginctl enable-linger barnusian
+```
+
+The UI is available on RATBOX at `http://localhost:8000` (or the configured
+port). From another device on its network, open
+`http://<RATBOX-LAN-IP>:8000`, replacing the port if configured differently.
+An SSH tunnel is also available as an alternative:
+
+```text
+ssh -L 8000:127.0.0.1:8000 barnusian@RATBOX
+```
+
+Then open `http://localhost:8000` on that computer.
+
+### Redeploying on RATBOX
+
+After connecting to RATBOX, update the existing checkout and synchronize its
+virtual environment:
+
+```text
+cd /home/barnusian/istherefootball
+git status --short
+git pull --ff-only
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m pip check
+```
+
+Check `git status --short` before pulling. If it shows local changes to tracked
+files, resolve or preserve them before continuing; do not overwrite production
+changes unintentionally. The `.env` file, fetched fixture data, generated
+reports and logs are machine-local and should be kept in place. The cron
+configuration is also managed on RATBOX and is not changed by `git pull`.
+
+The cron jobs run their scripts directly from the checkout, so they need no
+restart after an update. If the web UI is installed using the user service
+above, refresh the installed unit in case its definition changed, then restart
+it to load updated code or configuration:
+
+```text
+install -m 0644 deploy/systemd/istherefootball-web.service ~/.config/systemd/user/istherefootball-web.service
+systemctl --user daemon-reload
+systemctl --user restart istherefootball-web.service
+systemctl --user status istherefootball-web.service
+```
+
+If refreshed web receipts are needed, run
+`.venv/bin/python scripts/produce_web_fixtures.py` before restarting; it
+requires an existing full-range fixture file. Do not start a second server
+process while the service is running.
 
 The following cron entries are configured on the production environment
 (RATBOX):
